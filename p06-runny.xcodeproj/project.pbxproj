@@ -14,7 +14,37 @@
 		62A287A327D80E6700674EEF /* MilesRanStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A287A227D80E6700674EEF /* MilesRanStore.swift */; };
 		62A287A527D80E8800674EEF /* MilesRanViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A287A427D80E8800674EEF /* MilesRanViewModel.swift */; };
 		62A287A727D80E9D00674EEF /* MilesRanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A287A627D80E9D00674EEF /* MilesRanView.swift */; };
+		62FA209527E424F200ED2B27 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62FA209427E424F200ED2B27 /* WidgetKit.framework */; };
+		62FA209727E424F200ED2B27 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62FA209627E424F200ED2B27 /* SwiftUI.framework */; };
+		62FA209A27E424F200ED2B27 /* p06_runny_widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FA209927E424F200ED2B27 /* p06_runny_widget.swift */; };
+		62FA209C27E424F300ED2B27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62FA209B27E424F300ED2B27 /* Assets.xcassets */; };
+		62FA20A027E424F400ED2B27 /* p06-runny-widgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 62FA209227E424F200ED2B27 /* p06-runny-widgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		62FA20A527E42CFD00ED2B27 /* MilesRanStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A287A227D80E6700674EEF /* MilesRanStore.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		62FA209E27E424F400ED2B27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 62A2878927D80E1A00674EEF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 62FA209127E424F200ED2B27;
+			remoteInfo = "p06-runny-widgetExtension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		62FA20A127E424F400ED2B27 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				62FA20A027E424F400ED2B27 /* p06-runny-widgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		62A2879127D80E1A00674EEF /* p06-runny.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "p06-runny.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -25,6 +55,14 @@
 		62A287A227D80E6700674EEF /* MilesRanStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilesRanStore.swift; sourceTree = "<group>"; };
 		62A287A427D80E8800674EEF /* MilesRanViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilesRanViewModel.swift; sourceTree = "<group>"; };
 		62A287A627D80E9D00674EEF /* MilesRanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilesRanView.swift; sourceTree = "<group>"; };
+		62FA209227E424F200ED2B27 /* p06-runny-widgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "p06-runny-widgetExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		62FA209427E424F200ED2B27 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		62FA209627E424F200ED2B27 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		62FA209927E424F200ED2B27 /* p06_runny_widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = p06_runny_widget.swift; sourceTree = "<group>"; };
+		62FA209B27E424F300ED2B27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		62FA209D27E424F400ED2B27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62FA20A627E42E7400ED2B27 /* p06-runny-widgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "p06-runny-widgetExtension.entitlements"; sourceTree = "<group>"; };
+		62FA20A727E42F0F00ED2B27 /* p06-runny.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "p06-runny.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,13 +73,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		62FA208F27E424F200ED2B27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62FA209727E424F200ED2B27 /* SwiftUI.framework in Frameworks */,
+				62FA209527E424F200ED2B27 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		62A2878827D80E1A00674EEF = {
 			isa = PBXGroup;
 			children = (
+				62FA20A627E42E7400ED2B27 /* p06-runny-widgetExtension.entitlements */,
 				62A2879327D80E1A00674EEF /* p06-runny */,
+				62FA209827E424F200ED2B27 /* p06-runny-widget */,
+				62FA209327E424F200ED2B27 /* Frameworks */,
 				62A2879227D80E1A00674EEF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				62A2879127D80E1A00674EEF /* p06-runny.app */,
+				62FA209227E424F200ED2B27 /* p06-runny-widgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,6 +108,7 @@
 		62A2879327D80E1A00674EEF /* p06-runny */ = {
 			isa = PBXGroup;
 			children = (
+				62FA20A727E42F0F00ED2B27 /* p06-runny.entitlements */,
 				62A2879427D80E1A00674EEF /* p06_runnyApp.swift */,
 				62A2879627D80E1A00674EEF /* ContentView.swift */,
 				62A287A227D80E6700674EEF /* MilesRanStore.swift */,
@@ -76,6 +128,25 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		62FA209327E424F200ED2B27 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				62FA209427E424F200ED2B27 /* WidgetKit.framework */,
+				62FA209627E424F200ED2B27 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		62FA209827E424F200ED2B27 /* p06-runny-widget */ = {
+			isa = PBXGroup;
+			children = (
+				62FA209927E424F200ED2B27 /* p06_runny_widget.swift */,
+				62FA209B27E424F300ED2B27 /* Assets.xcassets */,
+				62FA209D27E424F400ED2B27 /* Info.plist */,
+			);
+			path = "p06-runny-widget";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,15 +157,34 @@
 				62A2878D27D80E1A00674EEF /* Sources */,
 				62A2878E27D80E1A00674EEF /* Frameworks */,
 				62A2878F27D80E1A00674EEF /* Resources */,
+				62FA20A127E424F400ED2B27 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				62FA209F27E424F400ED2B27 /* PBXTargetDependency */,
 			);
 			name = "p06-runny";
 			productName = "p06-runny";
 			productReference = 62A2879127D80E1A00674EEF /* p06-runny.app */;
 			productType = "com.apple.product-type.application";
+		};
+		62FA209127E424F200ED2B27 /* p06-runny-widgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62FA20A427E424F400ED2B27 /* Build configuration list for PBXNativeTarget "p06-runny-widgetExtension" */;
+			buildPhases = (
+				62FA208E27E424F200ED2B27 /* Sources */,
+				62FA208F27E424F200ED2B27 /* Frameworks */,
+				62FA209027E424F200ED2B27 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "p06-runny-widgetExtension";
+			productName = "p06-runny-widgetExtension";
+			productReference = 62FA209227E424F200ED2B27 /* p06-runny-widgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -107,6 +197,9 @@
 				LastUpgradeCheck = 1310;
 				TargetAttributes = {
 					62A2879027D80E1A00674EEF = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					62FA209127E424F200ED2B27 = {
 						CreatedOnToolsVersion = 13.1;
 					};
 				};
@@ -125,6 +218,7 @@
 			projectRoot = "";
 			targets = (
 				62A2879027D80E1A00674EEF /* p06-runny */,
+				62FA209127E424F200ED2B27 /* p06-runny-widgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -136,6 +230,14 @@
 			files = (
 				62A2879C27D80E1B00674EEF /* Preview Assets.xcassets in Resources */,
 				62A2879927D80E1B00674EEF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62FA209027E424F200ED2B27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62FA209C27E424F300ED2B27 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,7 +256,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		62FA208E27E424F200ED2B27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62FA20A527E42CFD00ED2B27 /* MilesRanStore.swift in Sources */,
+				62FA209A27E424F200ED2B27 /* p06_runny_widget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		62FA209F27E424F400ED2B27 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 62FA209127E424F200ED2B27 /* p06-runny-widgetExtension */;
+			targetProxy = 62FA209E27E424F400ED2B27 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		62A2879D27D80E1B00674EEF /* Debug */ = {
@@ -276,8 +395,10 @@
 		62A287A027D80E1B00674EEF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "p06-runny/p06-runny.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"p06-runny/Preview Content\"";
@@ -305,8 +426,10 @@
 		62A287A127D80E1B00674EEF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "p06-runny/p06-runny.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"p06-runny/Preview Content\"";
@@ -331,6 +454,62 @@
 			};
 			name = Release;
 		};
+		62FA20A227E424F400ED2B27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = "p06-runny-widgetExtension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 96P36NZQGS;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "p06-runny-widget/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "p06-runny-widget";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Bailey-Van-Wormer.p06-runny.p06-runny-widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		62FA20A327E424F400ED2B27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = "p06-runny-widgetExtension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 96P36NZQGS;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "p06-runny-widget/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "p06-runny-widget";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Bailey-Van-Wormer.p06-runny.p06-runny-widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -348,6 +527,15 @@
 			buildConfigurations = (
 				62A287A027D80E1B00674EEF /* Debug */,
 				62A287A127D80E1B00674EEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62FA20A427E424F400ED2B27 /* Build configuration list for PBXNativeTarget "p06-runny-widgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62FA20A227E424F400ED2B27 /* Debug */,
+				62FA20A327E424F400ED2B27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

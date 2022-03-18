@@ -6,16 +6,21 @@
 //
 
 import Foundation
+import WidgetKit
 
 struct MilesRanStore {
     
     static func save(miles: Double) {
-        UserDefaults.standard.set(miles, forKey: "miles")
+        defaults.standard.set(miles, forKey: "miles")
     }
     
     static func fetchMiles() -> Double {
-        let miles = UserDefaults.standard.double(forKey: "miles")
+        let miles = defaults.standard.double(forKey: "miles")
         return miles
     }
+    
+    static private var defaults = UserDefaults(suiteName: BaileyVanWormer)!
+    
+    WidgetCenter.shared.reloadAllTimelines()
     
 }
